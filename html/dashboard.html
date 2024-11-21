@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="icon" href="../image/image2.png" type="image/x-icon" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="profile-picture">
+        <img
+          src="../image/LRM_20240517_192913-01.jpeg"
+          alt="Profile Picture"
+          id="sidebarProfilePicture"
+        />
+      </div>
+      <h2>Portfolio</h2>
+      <ul>
+        <li><a href="#" id="homeTab">Home</a></li>
+        <li><a href="#" id="profileTab">Profile</a></li>
+        <li><a href="#" id="settingsTab">Settings</a></li>
+        <li><a href="#" id="logout">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <button id="burgerButton" class="burger-btn" title="Toggle Sidebar">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      <div id="content">
+        <h2>RMAGALLANEZ</h2>
+        <p>lost in daydream.</p>
+      </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
