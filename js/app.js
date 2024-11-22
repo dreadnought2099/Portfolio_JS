@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         reader.readAsDataURL(file);
       } else {
-        alert("Please select an image.");
+        alert("Please select an image!");
       }
     });
   };
