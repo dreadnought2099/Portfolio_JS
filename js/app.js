@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("userEmail", email);
         localStorage.setItem("userPassword", password);
         alert("Registration successful. You can now log in.");
-        window.location.href = "../login.html";
+        window.location.href = "../index.html";
       } else {
         alert("Please fill out all fields for registration.");
       }
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
   logoutButton?.addEventListener("click", () => {
     localStorage.removeItem("isLoggedIn");
     alert("Logged out successfully.");
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
   });
 
   // Navigation Handlers
@@ -172,8 +172,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
   if (!isLoggedIn && location.pathname.endsWith("../html/dashboard.html")) {
     alert("Please log in first.");
-    window.location.href = "../login.html";
-  } else if (isLoggedIn && location.pathname.endsWith("../login.html")) {
+    window.location.href = "../index.html";
+  } else if (isLoggedIn && location.pathname.endsWith("../index.html")) {
     window.location.href = "../html/dashboard.html";
   }
 });
