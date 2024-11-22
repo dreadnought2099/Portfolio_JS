@@ -111,6 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const newPassword = document.getElementById("settingsPassword").value;
       if (newEmail && newPassword) {
         localStorage.setItem("userEmail", newEmail);
+        localStorage.setItem("userPassword", newPassword);
         alert("Account details updated successfully!");
       } else {
         alert("Please fill out all fields.");
