@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Helper: Load Home Content
   const loadHomeContent = () => {
     contentDiv.innerHTML = `
-      <h2>Welcome to your Dashboard!</h2>
+      <h2 class="page-title">Welcome to your Dashboard!</h2>
       <div class="calendar-container">
           <iframe 
               src="https://calendar.google.com/calendar/embed?src=en.philippine%23holiday%40group.v.calendar.google.com&ctz=Asia%2FManila" 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Helper: Load Profile Content
   const loadProfileContent = () => {
     contentDiv.innerHTML = `
-      <h2>Edit Profile Picture</h2>
+      <h2 class="page-title">Edit Profile Picture</h2>
       <div class="profile-picture-container">
           <img id="profilePicturePreview" src="${
             localStorage.getItem("profilePicture") ||
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Helper: Load Settings Content
   const loadSettingsContent = () => {
     contentDiv.innerHTML = `
-      <h2>Edit Account Details</h2>
+      <h2 class="page-title">Edit Account Details</h2>
       <form id="settingsForm" class="settings-form">
           <div class="form-group">
               <label for="settingsEmail">Email</label>
