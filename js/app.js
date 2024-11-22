@@ -6,7 +6,7 @@ function toggleSidebar() {
   sidebar.classList.toggle("open");
   sidebar.classList.toggle("closed");
   mainContent.classList.toggle("sidebar-open");
-  burgerBtn.classList.toggle("active");
+  burgerBtn.classList.toggle("active"); // This will toggle the background color
 }
 
 document.addEventListener("DOMContentLoaded", () => {
