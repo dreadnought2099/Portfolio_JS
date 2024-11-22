@@ -1,3 +1,14 @@
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const mainContent = document.getElementById("mainContent");
+  const burgerBtn = document.getElementById("toggle-btn");
+
+  sidebar.classList.toggle("open");
+  sidebar.classList.toggle("closed");
+  mainContent.classList.toggle("sidebar-open");
+  burgerBtn.classList.toggle("active");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const contentDiv = document.getElementById("content");
   const homeTab = document.getElementById("homeTab");
@@ -27,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <h2>Edit Profile Picture</h2>
       <div class="profile-picture-container">
           <img id="profilePicturePreview" src="${
-            localStorage.getItem("profilePicture") || "default-profile.png"
+            localStorage.getItem("profilePicture") ||
+            "../image/LRM_20240517_192913-01.jpeg"
           }" 
                alt="Profile Picture Preview" class="profile-picture">
       </div>

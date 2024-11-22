@@ -8,8 +8,15 @@
     <title>Dashboard</title>
   </head>
   <body>
+    <!-- Burger Button -->
+    <button onclick="toggleSidebar()" id="toggle-btn" class="burger-btn">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <div class="profile-picture">
         <img
           src="../image/LRM_20240517_192913-01.jpeg"
@@ -27,12 +34,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
-      <button id="burgerButton" class="burger-btn" title="Toggle Sidebar">
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-      </button>
+    <div class="main-content" id="mainContent">
       <div id="content">
         <h2>RMAGALLANEZ</h2>
         <p>lost in daydream.</p>
