@@ -1,4 +1,3 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   color: #333;
 }
 
-/* Sidebar Styling */
 .sidebar {
   width: 250px;
   background-color: #2c3e50;
@@ -64,7 +62,6 @@ body {
   background-color: #34495e;
 }
 
-/* Main Content Styling */
 .main-content {
   margin-left: 250px;
   padding: 20px;
@@ -76,9 +73,10 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 60px;
+  text-align: center;
 }
 
-/* Profile Picture Section */
 .profile-picture-container {
   text-align: center;
   margin: 20px 0;
@@ -126,7 +124,6 @@ body {
   background-color: #2980b9;
 }
 
-/* Form Styling */
 .settings-form {
   max-width: 400px;
   margin: auto;
@@ -161,14 +158,12 @@ body {
   width: 100%;
 }
 
-/* Calendar Container */
 .calendar-container iframe {
   border-radius: 8px;
   border: 1px solid #ddd;
   overflow: hidden;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .sidebar {
     width: 200px;
@@ -184,7 +179,6 @@ body {
   }
 }
 
-/* Burger Button Styling */
 .burger-btn {
   background: none;
   border: none;
@@ -211,25 +205,20 @@ body {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Burger button in active state (cross symbol) */
 .burger-btn.active .burger-bar:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-  background-color: black;
+  background-color: #2c3e50;
 }
 
 .burger-btn.active .burger-bar:nth-child(2) {
-  opacity: 0;
-  background-color: black;
+  background-color: #2c3e50;
 }
 
 .burger-btn.active .burger-bar:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-  background-color: black;
+  background-color: #2c3e50;
 }
 
-/* Sidebar Toggle Animation */
 .sidebar {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .sidebar.open {
